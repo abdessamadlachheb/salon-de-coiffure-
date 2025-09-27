@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alaf Coiffure</title>
+    <meta name="description" content="Salon de coiffure moderne">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+</head>
+<body>
+    
+    <!-- === Navbar === -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">Contact</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+        </ul>
+    </nav>
+
+    <!-- === Hero Section === -->
+    <section class="hero" id="hero"
+         data-img1="{% static 'img/img11.jpg' %}"
+         data-img2="{% static 'img/img22.jpg' %}"
+         data-img3="{% static 'img/img33.jpg' %}">
+        <div class="hero-message">
+            <h1>Alaf Coiffure</h1>
+            <h1>Vivez l'Expérience de Beauté Ultime</h1>
+            <p>Chez Alaf Coiffure, votre style est notre passion</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <img src="{% static 'img/coupehomme.jpeg' %}" alt="Coupe Homme">
+                <h3>Coupe Homme</h3>
+            </div>
+            <div class="service-item">
+                <img src="{% static 'img/coupfemme.jpeg' %}" alt="Coupe Femme">
+                <h3>Coupe Femme</h3>
+            </div>
+            <div class="service-item">
+                <img src="{% static 'img/coloration.jpeg' %}" alt="Coloration">
+                <h3>Coloration</h3>
+            </div>
+            <div class="service-item">
+                <img src="{% static 'img/mariage.jpeg' %}" alt="Coiffure Mariage">
+                <h3>Coiffure Mariage</h3>
+            </div>
+            <div class="service-item">
+                <img src="{% static 'img/cappilar.jpeg' %}" alt="Soin Capillaire">
+                <h3>Soin Capillaire</h3>
+            </div>
+            <div class="service-item">
+                <img src="{% static 'img/rasage.jpg' %}" alt="Barbe & Rasage">
+                <h3>Barbe & Rasage</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <h2>À Propos de Nous</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Bienvenue chez <strong>Alaf Coiffure</strong>, votre salon de coiffure moderne et chaleureux. Nous offrons une gamme complète de services pour hommes, femmes et enfants, afin de vous aider à exprimer votre style unique.</p>
+                <p>Nos coiffeurs expérimentés utilisent les meilleurs produits pour garantir qualité et satisfaction.</p>
+            </div>
+            <div class="about-info">
+                <div class="info-item">
+                    <h3>📍 Adresse</h3>
+                    <p>123 Rue de la Beauté, Casablanca, Maroc</p>
+                </div>
+                <div class="info-item">
+                    <h3>⏰ Horaires</h3>
+                    <p>Lundi – Samedi: 9:00 – 19:00</p>
+                    <p>Dimanche: Fermé</p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Contact</h3>
+                    <p>Téléphone: 06 12 34 56 78</p>
+                    <p>Email: contact@alafcoiffure.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials & Call-to-Action Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>Ce Que Disent Nos Clients</h2>
+        <div class="testimonial-list">
+            <div class="testimonial-item">
+                <p>"Service excellent! Coiffeurs très professionnels et très accueillants."</p>
+                <h4>- Karim B.</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"J'adore la coupe et la coloration. Je recommande fortement Alaf Coiffure."</p>
+                <h4>- Fatima L.</h4>
+            </div>
+            <div class="testimonial-item">
+                <p>"Ambiance chaleureuse et très propre. Je reviendrai bientôt."</p>
+                <h4>- Youssef M.</h4>
+            </div>
+        </div>
+
+        <!-- Call-to-Action Button -->
+        <div class="cta-button">
+            <a href="#reservation">Réservez Maintenant</a>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" class="map">
+        <h2>📍 Nous Trouver</h2>
+        <div class="map-container">
+            <!-- Replace the src URL with your salon's Google Maps link -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.123456!2d-7.123456!3d33.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1234567890abc:0xabcdef123456789!2sAlaf%20Coiffure!5e0!3m2!1sfr!2sma!4v1695700000000!5m2!1sfr!2sma" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Link JS -->
+    <script src="{% static 'js/script1.js' %}" async defer></script>
+    
+</body>
+</html>
